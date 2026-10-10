@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+build/
+dist/
+*.egg-info/
+*.spec
+
+# local media used while testing
+*.mp4
+*.mov
+*.mkv
+*.webm
+nanosnip-qt.zip
+
+# Old files kept for reference, not tracked
+_archive/
+
+# KDE folder settings
+.directory

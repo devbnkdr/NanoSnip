@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nanosnip"
+version = "1.0.0"
+description = "Mirror, trim, crop. Nothing else. A tiny photo and video editor."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "devbnkdr" }]
+requires-python = ">=3.10"
+dependencies = ["PySide6>=6.5"]
+keywords = ["video", "trim", "cut", "crop", "mirror", "ffmpeg", "qt"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: X11 Applications :: Qt",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Video :: Non-Linear Editor",
+]
+
+[project.urls]
+Homepage = "https://github.com/devbnkdr/NanoSnip"
+Issues = "https://github.com/devbnkdr/NanoSnip/issues"
+
+[project.gui-scripts]
+nanosnip = "nanosnip:main"
+
+[tool.setuptools]
+py-modules = ["nanosnip"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
